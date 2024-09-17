@@ -57,7 +57,7 @@ sns.countplot(x=dataframe['book_table'])
 
 #to check rating distrubution
 rating_counts = dataframe['rate'].value_counts().sort_index()
-# Plot a bar plot
+
 sns.barplot(x=rating_counts.index, y=rating_counts.values, palette='viridis')
 plt.title("Ratings Distribution")
 plt.xlabel("Rate")
