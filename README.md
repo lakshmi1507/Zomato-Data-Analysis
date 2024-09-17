@@ -29,10 +29,9 @@ dataframe.info()
 #listed_in (type) column.
 type_counts = dataframe['listed_in(type)'].value_counts()
 
-# Define a color palette with exactly as many colors as there are categories
+
 custom_colors = ['skyblue', 'lightgreen', 'salmon', 'gold']  # Adjust the number of colors to match the categories
 
-# Plot the countplot with the adjusted color palette
 sns.countplot(x=dataframe['listed_in(type)'], palette=custom_colors)
 plt.xlabel("Type of restaurant")
 plt.show()
